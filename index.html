@@ -1,0 +1,63 @@
+<html>
+<html lang="zh-CN">
+
+  <style>
+        /* 自定义模态框样式 */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 999;
+        }
+        .modal-content {
+            background: white;
+            margin: 15% auto;
+            padding: 20px;
+            width: 50%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- 自定义模态框结构 -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h2>Downland web temp</h2>
+            <p>下载网页缓存</p>
+            <button onclick="document.getElementById('myModal').style.display='none'">已下载完成，点击关闭</button>
+        </div>
+    </div>
+
+    <script>
+        // 方法1：使用alert()基础弹窗
+        window.onload = function() {
+            alert("Loading pop-up window");
+            
+            // 方法2：使用confirm确认框
+            if(confirm("您是否同意使用本网站？")) {
+                console.log("用户点击了确定");
+            } else {
+                console.log("用户点击了取消");
+            }
+            
+            // 方法3：显示自定义模态框
+            document.getElementById('myModal').style.display = 'block';
+        };
+    </script>
+</body>
+<!>哔哩哔哩 @ikunMC
+<div style="text-align: center;">
+<title>bilibili @ikunMC 的网站</title>
+<h2>网站</h2>
+<h1>作者:bilibili@ikunMC</h1>
+<h2>
+<a href="https://b23.tv/aINBliE">作者首页</a>
+</h2>
+
+</div>
+</html>
